@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "59125765125",
+    "firebase_url": "https://bteb-e9b67-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bteb-e9b67",
+    "storage_bucket": "bteb-e9b67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59125765125:android:c1fd131fc2c61cdb97386c",
+        "android_client_info": {
+          "package_name": "com.dalazu.bteb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59125765125-spk2n1299mh7mg5j3npts4tsftqos22n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dalazu.bteb",
+            "certificate_hash": "d7747d8c777505dc30e9d05371fbcfc8e7d31cd2"
+          }
+        },
+        {
+          "client_id": "59125765125-smuv7kpa4kga0nfiitut6nphbadcls8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeXJuoftlatZYVhe-XC_7dpNfLzHea54g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59125765125-smuv7kpa4kga0nfiitut6nphbadcls8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

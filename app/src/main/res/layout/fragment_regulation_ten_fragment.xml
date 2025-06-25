@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".regulation.RegulationTenFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_semester"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            app:boxStrokeWidth="2dp"
+            app:endIconMode="dropdown_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select No. Of Semester"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_first_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toStartOf="@id/ti_second_semester"
+            app:layout_constraintStart_toStartOf="@id/ti_semester"
+            app:layout_constraintTop_toBottomOf="@+id/ti_semester"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_first_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1st Semester"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_second_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/ti_semester"
+            app:layout_constraintStart_toEndOf="@+id/ti_first_semester"
+            app:layout_constraintTop_toBottomOf="@+id/ti_semester"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_second_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="2nd Semester"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_third_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/ti_first_semester"
+            app:layout_constraintStart_toStartOf="@id/ti_first_semester"
+            app:layout_constraintTop_toBottomOf="@+id/ti_first_semester"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_third_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="3rd Semester"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_fourth_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/ti_second_semester"
+            app:layout_constraintStart_toStartOf="@+id/ti_second_semester"
+            app:layout_constraintTop_toBottomOf="@+id/ti_second_semester"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_fourth_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="4th Semester"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_fifth_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/ti_third_semester"
+            app:layout_constraintStart_toStartOf="@id/ti_third_semester"
+            app:layout_constraintTop_toBottomOf="@+id/ti_third_semester">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_fifth_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="5th Semester"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_six_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/ti_fourth_semester"
+            app:layout_constraintStart_toStartOf="@+id/ti_fourth_semester"
+            app:layout_constraintTop_toBottomOf="@+id/ti_fourth_semester">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_six_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="6th Semester"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_seven_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/ti_fifth_semester"
+            app:layout_constraintStart_toStartOf="@id/ti_fifth_semester"
+            app:layout_constraintTop_toBottomOf="@+id/ti_fifth_semester"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_seven_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="7th Semester"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_eight_semester"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/ti_six_semester"
+            app:layout_constraintStart_toStartOf="@+id/ti_six_semester"
+            app:layout_constraintTop_toBottomOf="@+id/ti_six_semester"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_eight_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="8th Semester"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_get_cgpa"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/primary_color"
+            android:text="GET CGPA"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ti_seven_semester" />
+
+        <TextView
+            android:id="@+id/tv_cgpa_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_get_cgpa" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
